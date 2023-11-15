@@ -1,0 +1,139 @@
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 1.3rem;
+    }
+
+      .nav-link {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .nav-link::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        height: 2px;
+        transition: all 0.5s;
+        border-bottom: 2px solid transparent;
+      }
+      
+      .nav-link:hover::before {
+        right: 0;
+        border-bottom-color: #9055fd;
+      }
+      
+}
+
+.content {
+    opacity: 0.8;
+}
+
+.hover1-button:hover {
+    background-color: rgba(86, 202, 0, 0.1);
+}
+
+.panel-1 {
+    opacity: 0.9;
+    box-sizing: content-box;
+    transition: all 0.5s ease-in-out;
+}
+
+#list-item li {
+    padding-bottom: 0.6rem;
+    letter-spacing: 1px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@media (min-width : 1200px) {
+    .panel-auto {
+        padding-top: 5rem !important;
+    }
+}
+
+@media (min-width : 990px) and (max-width : 1199px) {
+    .panel-auto {
+        padding-top: 4.9rem !important;
+    }
+}
+
+@media (max-width : 995px) {
+    .panel-auto {
+        padding: 2rem 1rem;
+    }
+}
+
+.panel-1:hover {
+    background-color: lightblue;
+    transform: scale(1.02);
+}
+
+@media (max-width : 992px) {
+    .panel-1 {
+        box-sizing: border-box !important;
+        margin: 1rem 2rem !important;
+        width: 90%;
+    }
+
+    #middle-content {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+@media (min-width :1000px) {
+    #img-girl {
+        height: 110%;
+        width: 500px;
+        transform: translateY(-1.5rem);
+    }
+}
+
+#table-content td {
+    padding: 0.7rem 1rem;
+}
+
+#inputPassword2::placeholder {
+    color: #D2E3C8 !important;
+}
+
+#column-1,
+#column-2,
+#column-3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+}
+
+#column-2 a,
+#column-3 a {
+    text-decoration: none !important;
+    color: white;
+}
+
+@media (min-width : 990px) {
+    #footer-cont {
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 990px) {
+    #footer-cont {
+        justify-content: space-around;
+    }
+}
+
+.button-play:hover {
+    transform: scale(1.08);
+}
+
+.button-play{
+    transition: transform 0.5s ease-in-out;
+}
+
+.accordion-button{
+    background-color: rgb(251, 248, 247) !important;
+}
